@@ -1,0 +1,368 @@
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    display: inline;
+}
+
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 1em;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+}
+textarea{
+    display: block;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    margin-left: 130px;
+}
+
+video, embed { float: right; padding-left: 20px; }
+
+
+body {
+    color: #666666;
+    background-color: #B8DBDE;
+    font-family: Verdana, Helvetica, sans-serif;
+
+}
+* {    box-sizing: border-box;}
+
+#gallery{
+    position: relative;
+    height: 200PX;
+}
+
+figure{
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .25;
+    top: -20px;
+}
+
+#gallery ul{
+    width: 300px;
+    list-style-type: none;
+}
+
+#gallery li{
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+#gallery img{
+    border: none;
+}
+#gallery a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-style: italic;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: color 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: -5px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+
+}
+
+h1{
+    color: #FFFFFF;
+    background-color: #000033;
+    padding-left: 1em;
+    margin: 0px;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+    font-family: Georgia, "Times New Roman", sans-serif;
+    text-align: center;
+}
+
+header{
+    line-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-left: 3em;
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+main{
+    padding: 1px 20px 20px 20px;
+    display: block;
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    padding-left: 30px;
+}
+
+
+nav{
+    font-weight: bold;
+    padding: 1.5em;
+    font-size: 120%;
+    float: left;
+    width: 160px;
+
+}
+
+
+h2{
+    color: #3399CC;
+    font-family: "Times New Roman";
+    text-shadow: #CCCCCC 1px 1px;
+}
+h3{
+    color: #000033;
+    font-family: "Times New Roman";
+}
+main ul {
+    list-style-image: url(marker.gif);
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+
+}
+nav :link {
+    text-color: #5C7FA3;
+    font-size: medium;
+}
+
+nav :visited {
+    text-color: #344873;
+}
+
+nav :hover {
+    text-color: #A52A2A;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover {transition: color 3s ease-out;}
+
+footer{
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: "Times New Roman";
+    padding: 20px;
+    margin-left: 190px;
+}
+dt{
+    color: #000033;
+}
+
+table{
+    border: #3399CC;
+    border: solid;
+}
+
+td{
+    padding: .5em;
+    border: #3399CC;
+    border: solid;
+    text-align: center;
+}
+th{
+    padding: .5em;
+    border: #3399CC;
+    border: solid;
+}
+.text{
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+
+
+
+#contact{
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+}
+
+.resort{
+    color: #000099;
+    font-weight: bold;
+<!-- I used a color picker to get dark blue cause the blue code given was too light to tell apart from the light blue -->
+}
+
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: #333333 3px 3px 3px;
+    border: 2px solid #000033;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    border-style:solid;
+    border-width: 1px;
+
+}
+#homehero{
+    height: 300px;
+    background-image: url(coast.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+#yurthero{
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+#trailhero{
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 190px;
+}
+
+body{
+    background-color: #333333;
+    color: #eaeaea;
+}
+
+
+
+@media only screen and  (max-width: 64em) {
+    body {
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+        border: none;
+    }
+
+    header {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 0;
+        height: auto;
+    }
+
+    h1 {
+        letter-spacing: .01em;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: .5em;
+    }
+
+    nav li {
+        display: inline;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+
+    #homehero {
+        margin-left: 0;
+        height: 200px;
+    }
+
+    #yurthero {
+        margin-left: 0;
+        height: 200px;
+    }
+
+    #trailhero {
+        margin-left: 0;
+        height: 200px;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+}
+    @media only screen and (max-width: 37.5em) {
+        main{
+            padding-top: .1em;
+            padding-bottom: .1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 90%;
+        }
+        h1{
+            font-size: 2em;
+        }
+        nav{
+            padding: 0;
+        }
+        nav li{
+            display: block;
+        }
+        label{ float: none;
+            text-align: left;}
+        input[type="submit"]    {margin-left: 0;}
+        #homehero{
+         background-image: none;
+         height: 0;
+        }
+        #yurthero{
+            background-image: none;
+            height: 0;
+        }
+        #trailhero{
+            background-image: none;
+            height: 0;
+        }
+        #mobile{
+            display: inline;
+        }
+        #desktop{
+            display: none;
+        }
+    }
+
+
+
+
+
+
